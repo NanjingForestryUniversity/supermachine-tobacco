@@ -26,23 +26,23 @@ class Config:
     # blk_model_path = r"/home/dt/tobacco-color/weights/rf_4x4_c22_20_sen8_9.model"  # 机器上部署的路径
     spec_size_threshold = 3
 
-    s_threshold_a = 125  # s_a的最高允许值
-    s_threshold_b = 125  # s_b的最高允许值
+    s_threshold_a = 124  # s_a的最高允许值
+    s_threshold_b = 124  # s_b的最高允许值
 
     # rgb模型参数
     rgb_tobacco_model_path = r"weights/tobacco_dt_2022-08-27_14-43.model"  # 开发时的路径
     # rgb_tobacco_model_path = r"/home/dt/tobacco-color/weights/tobacco_dt_2022-08-27_14-43.model"  # 机器上部署的路径
-    rgb_background_model_path = r"weights/background_dt_2022-08-22_22-15.model"  # 开发时的路径
+    rgb_background_model_path = r"weights/background_dt_2023-12-26_20-39.model"  # 开发时的路径
     # rgb_background_model_path = r"/home/dt/tobacco-color/weights/background_dt_2022-08-22_22-15.model"  # 机器上部署的路径
     threshold_low, threshold_high = 10, 230
     threshold_s = 190  # 饱和度的最高允许值
-    threshold_a = 127  # a的最高允许值
-    threshold_b = 127  # b的最高允许值
+    threshold_a = 125  # a的最高允许值
+    threshold_b = 126  # b的最高允许值
     rgb_size_threshold = 6  # rgb的尺寸限制
     lab_size_threshold = 6  # lab的尺寸限制
-    ai_path = 'weights/best0827.pt'  # 开发时的路径
+    ai_path = 'weights/best1227.pt'  # 开发时的路径
     # ai_path = '/home/dt/tobacco-color/weights/best0827.pt'  # 机器上部署的路径
-    ai_conf_threshold = 0.6
+    ai_conf_threshold = 0.8
 
     # mask parameter
     target_size = (1024, 1024)  # (Width, Height) of mask

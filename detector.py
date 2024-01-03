@@ -48,7 +48,8 @@ class SugarDetect(object):
         img = letterbox(img, (imgsz, imgsz), stride=stride)[0]
 
         # Convert
-        img = img[:, :, ::-1].transpose(2, 0, 1)  # BGR to RGB, to 3x416x416
+        # img = img[:, :, ::-1].transpose(2, 0, 1)  # BGR to RGB, to 3x416x416
+        img = img.transpose(2, 0, 1)  # to 3x416x416
         img = np.ascontiguousarray(img)
 
         # Preprocess
